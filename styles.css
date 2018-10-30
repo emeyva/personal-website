@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background-image:
+			url(./image_1.jpg);
+
+	background-position: top;
+	background-repeat: repeat;
+	background-size: 100%;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+
+header {
+
+  background: #55d6aa;
+
+	text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+header::after {
+  display: table;
+  clear: both;
+}
+
+button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+button {
+	background: none;
+	color: #FFF;
+	width: 240px;
+	height: 80px;
+	border: 2px solid #FFF;
+	font-size: 18px;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+}
+
+button:focus{
+	outline: none;
+}
+button:before{
+	content: '';
+	display: block;
+	position: absolute;
+	background: #FFF;
+	width: 60px;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translateX(-130px) skewX(-15deg);
+}
+button:after{
+	content: '';
+	display: block;
+	position: absolute;
+	background: #55d6aa;
+	width: 30px;
+	height: 100%;
+	left: 30px;
+	top: 0;
+	opacity: 0;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg);
+}
+button:hover{
+	background: #55d6aa;
+	color: #FFF;
+	cursor: pointer;
+}
+button:hover:before{
+	transform: translateX(300px) skewX(-15deg);
+	opacity: .6;
+	transition: .7s;
+}
+button:hover:after{
+	transform: translateX(300px) skewX(-15deg);
+	opacity: 1;
+	transition: .7s;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+ul {
+
+  padding: 0 10px
+  list-style: none;
+}
+
+li {
+  padding: 20px 0;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+}
+ul a{
+  color: white;
+  text-decoration: none;
+}
+ul a:hover{
+	color: black;
+}
+
+li:hover {
+
+}
+
+h1 {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0 auto 20px auto;
+}
+
+h3 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 45px 0;
+}
+
+h4 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+p {
+  color: #FFF;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+}
+
+footer {
+	padding: 20px 0;
+  background-color: #55d6aa;
+  text-align: center;
+  height: 60px;
+
+}
+.anchor{
+	position: fixed;
+  height: 300px;
+}
+
+
+.welcome {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  margin-top: 120px;
+}
+
+.question {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  height: 400px;
+}
+
+.answer {
+  background: white;
+	position: relative;
+	text-align: center;
+  border: 1px solid black;
+  margin: auto;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+}
+
+.answer:hover {
+  background: #DBE9EE;
+  color: white;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 35%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #FFF;
+    color: black;
+}
+
+/* Twitter */
+.fa-instagram {
+    background: #FFF;
+    color: black;
+}
+
+.fa-linkedin {
+    background: #FFF;
+    color: black;
+}
