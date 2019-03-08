@@ -2,9 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 body {
 	margin: 0;
-	background-image:
-			url(./image_1.jpg);
-
+	weight: 2000px;
+	background-color: #F2F2F2;
 	background-position: top;
 	background-repeat: repeat;
 	background-size: 100%;
@@ -12,14 +11,13 @@ body {
 	font-weight: 800;
 }
 
-
 header {
-
-  background: #55d6aa;
-
+  background: #111;
 	text-align: center;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
+	position: fixed;
+	top: 0;
 }
 
 header::after {
@@ -27,46 +25,35 @@ header::after {
   clear: both;
 }
 
-button {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+  filter: alpha(opacity=90);
+	right: 50px;
 }
 
 button {
-	background: none;
-	color: #FFF;
+	position: static;
+  top: 50%;
+	left: 50%
+	color: #000;
 	width: 240px;
 	height: 80px;
-	border: 2px solid #FFF;
+	border: 2px solid #000;
 	font-size: 18px;
 	border-radius: 4px;
 	transition: .6s;
 	overflow: hidden;
+	margin-top: 25px;
 }
 
-button:focus{
-	outline: none;
-}
-button:before{
-	content: '';
-	display: block;
-	position: absolute;
-	background: #FFF;
-	width: 60px;
-	height: 100%;
-	left: 0;
-	top: 0;
-	opacity: .5s;
-	filter: blur(30px);
-	transform: translateX(-130px) skewX(-15deg);
-}
+
 button:after{
 	content: '';
 	display: block;
 	position: absolute;
-	background: #55d6aa;
+	background: #000;
 	width: 30px;
 	height: 100%;
 	left: 30px;
@@ -76,20 +63,13 @@ button:after{
 	transform: translate(-100px) scaleX(-15deg);
 }
 button:hover{
-	background: #55d6aa;
+	background: #000;
 	color: #FFF;
 	cursor: pointer;
+	border: 3px solid #FFF;
 }
-button:hover:before{
-	transform: translateX(300px) skewX(-15deg);
-	opacity: .6;
-	transition: .7s;
-}
-button:hover:after{
-	transform: translateX(300px) skewX(-15deg);
-	opacity: 1;
-	transition: .7s;
-}
+
+
 
 nav ul {
   margin: 0;
@@ -107,7 +87,7 @@ nav li {
 }
 
 nav a {
-  color: #444;
+  color: #000;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -155,15 +135,15 @@ ul a{
   text-decoration: none;
 }
 ul a:hover{
-	color: black;
+	color: #FFF;
 }
 
 li:hover {
-
+	color: #FFF;
 }
 
 h1 {
-  color: #FFF;
+  color: #000;
   font-family: 'Oswald', sans-serif;
   font-size: 32px;
   font-weight: 300;
@@ -173,9 +153,9 @@ h1 {
 h2 {
   color: #333;
   font-family: 'Varela Round', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 100;
-  margin: 0 auto 20px auto;
+  margin: 50px 200px 50px 200px;
 }
 
 h3 {
@@ -206,22 +186,23 @@ p {
 
 footer {
 	padding: 20px 0;
-  background-color: #55d6aa;
+  background-color: #111;
   text-align: center;
-  height: 60px;
+  height: 70px;
 
 }
 .anchor{
-	position: fixed;
-  height: 300px;
+  height: 5px;
+}
+h5{
+	color: #FFFFFF
 }
 
 
 .welcome {
-  box-sizing: border-box;
   text-align: center;
   width: 100%;
-  height: 300px;
+  height: 600px;
   margin-top: 120px;
 }
 
