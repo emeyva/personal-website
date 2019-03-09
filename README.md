@@ -3,8 +3,6 @@ Testing HTML, CSS and Javascript
 
 Personal Webpage
 
-HTML
-CSS
-JAVASCRIPT
+Available here - [Eurico Mey Vaz website](https://pages.github.com/).
 
 under development
